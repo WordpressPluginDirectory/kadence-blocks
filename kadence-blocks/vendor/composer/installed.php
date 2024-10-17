@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'kadencewp/kadence-blocks',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => 'f7858a4adc63be6bbcc3d7fd2fa4fc18e2331e09',
+        'pretty_version' => 'dev-feature/gradient-text-on-highlights',
+        'version' => 'dev-feature/gradient-text-on-highlights',
+        'reference' => '6037b89223b48f7353e3b19e893e17eb791cc190',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -38,9 +38,9 @@
             'dev_requirement' => false,
         ),
         'kadencewp/kadence-blocks' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => 'f7858a4adc63be6bbcc3d7fd2fa4fc18e2331e09',
+            'pretty_version' => 'dev-feature/gradient-text-on-highlights',
+            'version' => 'dev-feature/gradient-text-on-highlights',
+            'reference' => '6037b89223b48f7353e3b19e893e17eb791cc190',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

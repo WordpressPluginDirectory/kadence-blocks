@@ -306,7 +306,11 @@
             ""
           ],
           "lineType": "px",
-          "letterSpacing": "",
+          "letterSpacing": [
+            "",
+            "",
+            ""
+          ],
           "textTransform": "",
           "family": "",
           "google": false,

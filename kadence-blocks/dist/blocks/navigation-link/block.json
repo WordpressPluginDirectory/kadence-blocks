@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "kadence/navigation-link",
   "title": "Kadence Navigation Link",
-  "category": "design",
+  "category": "kadence-blocks",
   "ancestor": [
     "kadence/navigation",
     "core/navigation"
