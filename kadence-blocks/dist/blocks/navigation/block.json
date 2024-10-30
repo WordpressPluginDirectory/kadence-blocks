@@ -10,7 +10,7 @@
     "navigation",
     "links"
   ],
-  "textdomain": "default",
+  "textdomain": "kadence-blocks",
   "attributes": {
     "uniqueID": {
       "type": "string"

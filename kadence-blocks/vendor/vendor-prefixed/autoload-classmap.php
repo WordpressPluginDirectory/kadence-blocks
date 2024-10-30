@@ -292,7 +292,6 @@ return array(
    'ValueError' => $strauss_src . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
    'Symfony\Polyfill\Php80\Php80' => $strauss_src . '/symfony/polyfill-php80/Php80.php',
    'Symfony\Polyfill\Php80\PhpToken' => $strauss_src . '/symfony/polyfill-php80/PhpToken.php',
-   'Symfony\Polyfill\Php72\Php72' => $strauss_src . '/symfony/polyfill-php72/Php72.php',
    'KadenceWP\KadenceBlocks\GrahamCampbell\ResultType\Error' => $strauss_src . '/graham-campbell/result-type/src/Error.php',
    'KadenceWP\KadenceBlocks\GrahamCampbell\ResultType\Success' => $strauss_src . '/graham-campbell/result-type/src/Success.php',
    'KadenceWP\KadenceBlocks\GrahamCampbell\ResultType\Result' => $strauss_src . '/graham-campbell/result-type/src/Result.php',
