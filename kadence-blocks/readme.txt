@@ -2,9 +2,9 @@
 Contributors: britner, oakesjosh, woodardmc
 Tags: gutenberg, blocks, page builder, editor, gutenberg blocks
 Donate link: https://www.kadencewp.com/about-us/
-Requires at least: 6.3
+Requires at least: 6.4
 Tested up to: 6.7
-Stable tag: 3.3.7
+Stable tag: 3.4.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -173,6 +173,26 @@ Please report security bugs found in the source code of the Kadence Blocks plugi
 Please report security bugs found in the Kadence Blocks plugin's source code through the Patchstack Vulnerability Disclosure Program https://patchstack.com/database/vdp/kadence-blocks. The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
 
 == Changelog ==
+
+= 3.4.0 =
+Release Date: December 5th 2024
+* Add: New Advanced Table block.
+* Update: Close mega menu when clicking outside of dropdown.
+* Update: Improve tabbing through navigation with submenus.
+* Update: Post categories as option in Advanced Navigation builder.
+* Fix: Issue with table of contents script dependency timing.
+* Fix: Issue with sticky header sections when transparent is active.
+* Fix: Border radius on thumbnail in advanced gallery.
+* Fix: Icon list border display when not no width is provided.
+* Fix: Navigation link icon size not applying.
+* Fix: Icon list link styling of none not applying.
+* Fix: Advanced text link wrap on some themes.
+* Fix: Advanced search input background color not applying.
+* Fix: WPML improvements with advanced text block.
+* Fix: Row layouts with advanced navigation links overlapping sticky header.
+* Fix: Issue with adding inner blocks to countdown block.
+* Fix: Shrink middle row option was shrinking images in mega menu.
+* Fix: Shrink middle row tablet and mobile height not saving.
 
 = 3.3.7 =
 Release Date: November 21st 2024
