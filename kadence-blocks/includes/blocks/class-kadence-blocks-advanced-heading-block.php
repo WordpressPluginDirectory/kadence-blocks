@@ -193,72 +193,33 @@ class Kadence_Blocks_Advancedheading_Block extends Kadence_Blocks_Abstract_Block
 				];
 			}
 			if ( isset( $attributes['textShadow'] ) && is_array( $attributes['textShadow'] ) && isset( $attributes['textShadow'][0] ) && is_array( $attributes['textShadow'][0] ) && ((isset( $attributes['enableTextShadow'] ) && $attributes['enableTextShadow']) || (isset( $attributes['textShadow'][0]['enable'] ) && $attributes['textShadow'][0]['enable']) ) ) {
-				$css->add_property( 'text-shadow', ( isset( $attributes['textShadow'][0]['hOffset'] ) ? $attributes['textShadow'][0]['hOffset'] : 1 ) . 'px ' . ( isset( $attributes['textShadow'][0]['vOffset'] ) ? $attributes['textShadow'][0]['vOffset'] : 1 ) . 'px ' . ( isset( $attributes['textShadow'][0]['blur'] ) ? $attributes['textShadow'][0]['blur'] : 1 ) . 'px ' . ( isset( $attributes['textShadow'][0]['color'] ) ? $css->render_color( $attributes['textShadow'][0]['color'] ) : 'rgba(0,0,0,0.2)' ) );
+				$css->add_property('text-shadow',($attributes['textShadow'][0]['hOffset'] ?? 1) . 'px ' . ($attributes['textShadow'][0]['vOffset'] ?? 1) . 'px ' . ($attributes['textShadow'][0]['blur'] ?? 1) . 'px ' . ( isset( $attributes['textShadow'][0]['color'] ) ? $css->render_color( $attributes['textShadow'][0]['color'] ) : 'rgba(0,0,0,0.2)' ) );
 			}
 			if ( isset( $attributes['textShadowTablet'] ) && is_array( $attributes['textShadowTablet'] ) && isset( $attributes['textShadowTablet'][0] ) && is_array( $attributes['textShadowTablet'][0] ) && ((isset( $attributes['enableTextShadow'] ) && $attributes['enableTextShadow']) || (isset( $attributes['textShadow'][0]['enable'] ) && $attributes['textShadow'][0]['enable']) ) ) {
 				$css->set_media_state('tablet');
-				$css->add_property( 'text-shadow', ( isset( $attributes['textShadowTablet'][0]['hOffset'] ) && ! empty( $attributes['textShadowTablet'][0]['hOffset'] ) ? $attributes['textShadowTablet'][0]['hOffset'] : $attributes['textShadow'][0]['hOffset'] ) . 'px ' . ( isset( $attributes['textShadowTablet'][0]['vOffset'] ) && ! empty( $attributes['textShadowTablet'][0]['vOffset'] ) ? $attributes['textShadowTablet'][0]['vOffset'] : $attributes['textShadow'][0]['vOffset'] ) . 'px ' . ( isset( $attributes['textShadowTablet'][0]['blur'] ) && ! empty( $attributes['textShadowTablet'][0]['blur'] ) ? $attributes['textShadowTablet'][0]['blur']  : $attributes['textShadow'][0]['blur'] ) . 'px ' . ( isset( $attributes['textShadowTablet'][0]['color'] ) && ! empty( $attributes['textShadowTablet'][0]['color'] ) ) ? $css->render_color( $attributes['textShadowTablet'][0]['color'] ) : $css->render_color( $attributes['textShadow'][0]['color'] ) );
+				$css->add_property( 'text-shadow',( ! empty( $attributes['textShadowTablet'][0]['hOffset'] ) ? $attributes['textShadowTablet'][0]['hOffset'] : $attributes['textShadow'][0]['hOffset'] ) . 'px ' . ( ! empty( $attributes['textShadowTablet'][0]['vOffset'] ) ? $attributes['textShadowTablet'][0]['vOffset'] : $attributes['textShadow'][0]['vOffset'] ) . 'px ' . ( ! empty( $attributes['textShadowTablet'][0]['blur'] ) ? $attributes['textShadowTablet'][0]['blur'] : $attributes['textShadow'][0]['blur'] ) . 'px ' . ( ! empty( $attributes['textShadowTablet'][0]['color'] ) ? $css->render_color( $attributes['textShadowTablet'][0]['color'] ) : $css->render_color( $attributes['textShadow'][0]['color'] ) ) );
 			}
 			if ( isset( $attributes['textShadowMobile'] ) && is_array( $attributes['textShadowMobile'] ) && isset( $attributes['textShadowMobile'][0] ) && is_array( $attributes['textShadowMobile'][0] ) && ((isset( $attributes['enableTextShadow'] ) && $attributes['enableTextShadow']) || (isset( $attributes['textShadow'][0]['enable'] ) && $attributes['textShadow'][0]['enable']) ) ) {
 				$css->set_media_state('mobile');
-				$css->add_property( 'text-shadow', ( isset( $attributes['textShadowMobile'][0]['hOffset'] ) && ! empty( $attributes['textShadowMobile'][0]['hOffset'] ) ? $attributes['textShadowMobile'][0]['hOffset'] : ( isset( $attributes['textShadowTablet'][0]['hOffset'] ) && ! empty( $attributes['textShadowTablet'][0]['hOffset'] ) ? $attributes['textShadowTablet'][0]['hOffset'] : $attributes['textShadow'][0]['hOffset']) ) . 'px ' . (  isset( $attributes['textShadowMobile'][0]['vOffset'] ) && ! empty( $attributes['textShadowMobile'][0]['vOffset'] ) ? $attributes['textShadowMobile'][0]['vOffset'] : (isset( $attributes['textShadowTablet'][0]['vOffset'] ) && ! empty( $attributes['textShadowTablet'][0]['vOffset'] ) ? $attributes['textShadowTablet'][0]['vOffset'] : $attributes['textShadow'][0]['vOffset']) ) . 'px ' . ( isset( $attributes['textShadowMobile'][0]['blur'] ) && ! empty( $attributes['textShadowMobile'][0]['blur'] ) ? $attributes['textShadowMobile'][0]['blur'] : (isset( $attributes['textShadowTablet'][0]['blur'] ) && ! empty( $attributes['textShadowTablet'][0]['blur'] ) ? $attributes['textShadowTablet'][0]['blur']  : $attributes['textShadow'][0]['blur']) ) . 'px ' . (isset($attributes['textShadowMobile'][0]['color']) && ! empty($attributes['textShadowMobile'][0]['color']) ? $css->render_color($attributes['textShadowMobile'][0]['color']) : (isset($attributes['textShadowTablet'][0]['color']) && !empty($attributes['textShadowTablet'][0]['color']) ? $css->render_color($attributes['textShadowTablet'][0]['color']) : $css->render_color($attributes['textShadow'][0]['color']))) );
+				$css->add_property( 'text-shadow',( ! empty( $attributes['textShadowMobile'][0]['hOffset'] ) ? $attributes['textShadowMobile'][0]['hOffset'] : ( ! empty( $attributes['textShadowTablet'][0]['hOffset'] ) ? $attributes['textShadowTablet'][0]['hOffset'] : $attributes['textShadow'][0]['hOffset']) ) . 'px ' . (  ! empty( $attributes['textShadowMobile'][0]['vOffset'] ) ? $attributes['textShadowMobile'][0]['vOffset'] : ( ! empty( $attributes['textShadowTablet'][0]['vOffset'] ) ? $attributes['textShadowTablet'][0]['vOffset'] : $attributes['textShadow'][0]['vOffset']) ) . 'px ' . ( ! empty( $attributes['textShadowMobile'][0]['blur'] ) ? $attributes['textShadowMobile'][0]['blur'] : ( ! empty( $attributes['textShadowTablet'][0]['blur'] ) ? $attributes['textShadowTablet'][0]['blur'] : $attributes['textShadow'][0]['blur']) ) . 'px ' . ( ! empty( $attributes['textShadowMobile'][0]['color'] ) ? $css->render_color( $attributes['textShadowMobile'][0]['color']) : ( ! empty( $attributes['textShadowTablet'][0]['color'] ) ? $css->render_color( $attributes['textShadowTablet'][0]['color'] ) : $css->render_color( $attributes['textShadow'][0]['color'] ) ) ) );
 			}
 		}
-		if ( isset($attributes['textOrientation']) ) {
-			switch ( $attributes['textOrientation'] ) {
-				case 'horizontal':
-					$css->add_property( 'writing-mode', 'horizontal-tb' );
-					$css->add_property( 'text-orientation', 'mixed' );
-					break;
-				case 'stacked':
-					$css->add_property( 'writing-mode', 'vertical-lr' );
-					$css->add_property( 'text-orientation', 'upright' );
-					break;
-				case 'sideways-down':
-					$css->add_property( 'writing-mode', 'vertical-lr' );
-					break;
-				case 'sideways-up':
-					$css->add_property( 'writing-mode', 'sideways-lr' );
-					break;
-			}
+
+		if (isset($attributes['textOrientation'])) {
+			$this->handle_text_orientation($css, $attributes['textOrientation']);
+			$this->handle_max_height($css, $attributes, 0, 'textOrientation');
 		}
-		if ( isset($attributes['tabletTextOrientation']) ) {
+
+		if (isset($attributes['tabletTextOrientation'])) {
 			$css->set_media_state('tablet');
-			switch ( $attributes['tabletTextOrientation'] ) {
-				case 'horizontal':
-					$css->add_property( 'writing-mode', 'horizontal-tb' );
-					$css->add_property( 'text-orientation', 'mixed' );
-					break;
-				case 'stacked':
-					$css->add_property( 'writing-mode', 'vertical-lr' );
-					$css->add_property( 'text-orientation', 'upright' );
-					break;
-				case 'sideways-down':
-					$css->add_property( 'writing-mode', 'vertical-lr' );
-					break;
-				case 'sideways-up':
-					$css->add_property( 'writing-mode', 'sideways-lr' );
-					break;
-			}
+			$this->handle_text_orientation($css, $attributes['tabletTextOrientation']);
+			$this->handle_max_height($css, $attributes, 1, 'tabletTextOrientation');
 		}
-		if ( isset($attributes['mobileTextOrientation']) ) {
+
+		if (isset($attributes['mobileTextOrientation'])) {
 			$css->set_media_state('mobile');
-			switch ( $attributes['mobileTextOrientation'] ) {
-				case 'horizontal':
-					$css->add_property( 'writing-mode', 'horizontal-tb' );
-					$css->add_property( 'text-orientation', 'mixed' );
-					break;
-				case 'stacked':
-					$css->add_property( 'writing-mode', 'vertical-lr' );
-					$css->add_property( 'text-orientation', 'upright' );
-					break;
-				case 'sideways-down':
-					$css->add_property( 'writing-mode', 'vertical-lr' );
-					break;
-				case 'sideways-up':
-					$css->add_property( 'writing-mode', 'sideways-lr' );
-					break;
-			}
+			$this->handle_text_orientation($css, $attributes['mobileTextOrientation']);
+			$this->handle_max_height($css, $attributes, 2, 'mobileTextOrientation');
 		}
 
 		$css->set_media_state( 'tablet' );
@@ -677,6 +638,60 @@ class Kadence_Blocks_Advancedheading_Block extends Kadence_Blocks_Abstract_Block
 		}
 		return '<span class="kb-svg-icon-wrap kb-adv-heading-icon kb-svg-icon-' . esc_attr( $attributes['icon'] ) . ' kb-adv-heading-icon-side-' . esc_attr( $icon_side ) . '"' . ( ! empty( $attributes['iconTooltip'] ) ? ' data-kb-tooltip-content="' . esc_attr( $attributes['iconTooltip'] ) . '" tabindex="0"' . $tooltip_placement : '' ) . '>' . $svg_icon . '</span>';
 	}
+
+	/**
+	 * Handles the text orientation by updating CSS properties based on the specified orientation.
+	 *
+	 * @param object $css The CSS processor object used to apply properties.
+	 * @param string $textOrientation The specified text orientation. Possible values are 'horizontal', 'stacked', 'sideways-down', and 'sideways-up'.
+	 * @return void
+	 */
+	private function handle_text_orientation($css, $textOrientation) {
+		switch ($textOrientation) {
+			case 'horizontal':
+				$css->add_property('writing-mode', 'horizontal-tb');
+				$css->add_property('text-orientation', 'mixed');
+				break;
+			case 'stacked':
+				$css->add_property('writing-mode', 'vertical-lr');
+				$css->add_property('text-orientation', 'upright');
+				break;
+			case 'sideways-down':
+				$css->add_property('writing-mode', 'vertical-lr');
+				$css->add_property('text-orientation', 'sideways');
+				break;
+			case 'sideways-up':
+				$css->add_property('writing-mode', 'sideways-lr');
+				$css->add_property('text-orientation', 'sideways');
+				break;
+		}
+	}
+
+	/**
+	 * Handles the max-height property for CSS generation based on block attributes.
+	 *
+	 * @param object $css The CSS generator object.
+	 * @param array $attributes The block attributes.
+	 * @param int $deviceIndex The index representing the current device context.
+	 * @param string $orientationKey The key that defines the orientation for the current context.
+	 *
+	 * @return void
+	 */
+	private function handle_max_height($css, $attributes, $deviceIndex, $orientationKey) {
+		if (
+			isset($attributes['maxHeight']) &&
+			is_array($attributes['maxHeight']) &&
+			!empty($attributes['maxHeight'][$deviceIndex]) &&
+			$attributes[$orientationKey] !== 'horizontal'
+		) {
+			$css->add_property(
+				'max-height',
+				$attributes['maxHeight'][$deviceIndex] .
+				( !isset($attributes['maxHeightType'][$deviceIndex]) ? 'px' : $attributes['maxHeightType'][$deviceIndex] )
+			);
+		}
+	}
+
 
 }
 
