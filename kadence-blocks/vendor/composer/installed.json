@@ -655,6 +655,57 @@
             "install-path": "../psr/log"
         },
         {
+            "name": "stellarwp/arrays",
+            "version": "1.3.1",
+            "version_normalized": "1.3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stellarwp/arrays.git",
+                "reference": "315a9b2018ac6f2475a346c89b1d7120ae07c218"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stellarwp/arrays/zipball/315a9b2018ac6f2475a346c89b1d7120ae07c218",
+                "reference": "315a9b2018ac6f2475a346c89b1d7120ae07c218",
+                "shasum": ""
+            },
+            "require-dev": {
+                "lucatume/wp-browser": "^3.5 || ^4.0",
+                "saggre/phpdocumentor-markdown": "^0.1.3",
+                "symfony/event-dispatcher-contracts": "^2.5.1",
+                "symfony/string": "^5.4",
+                "szepeviktor/phpstan-wordpress": "^1.1"
+            },
+            "time": "2025-02-07T18:23:13+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "StellarWP\\Arrays\\": "src/Arrays/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "StellarWP",
+                    "email": "dev@stellarwp.com"
+                },
+                {
+                    "name": "Matthew Batchelder",
+                    "email": "matt.batchelder@stellarwp.com"
+                }
+            ],
+            "description": "A library for array manipulation.",
+            "support": {
+                "issues": "https://github.com/stellarwp/arrays/issues",
+                "source": "https://github.com/stellarwp/arrays/tree/1.3.1"
+            },
+            "install-path": "../stellarwp/arrays"
+        },
+        {
             "name": "stellarwp/container-contract",
             "version": "1.1.1",
             "version_normalized": "1.1.1.0",
@@ -703,6 +754,65 @@
                 "source": "https://github.com/stellarwp/container-contract/tree/1.1.1"
             },
             "install-path": "../stellarwp/container-contract"
+        },
+        {
+            "name": "stellarwp/db",
+            "version": "1.2.0",
+            "version_normalized": "1.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stellarwp/db.git",
+                "reference": "f92d6ae0bcd74a3f526b023bb2d6ecd13227ef96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stellarwp/db/zipball/f92d6ae0bcd74a3f526b023bb2d6ecd13227ef96",
+                "reference": "f92d6ae0bcd74a3f526b023bb2d6ecd13227ef96",
+                "shasum": ""
+            },
+            "require-dev": {
+                "codeception/module-asserts": "^1.0",
+                "codeception/module-cli": "^1.0",
+                "codeception/module-db": "^1.0",
+                "codeception/module-filesystem": "^1.0",
+                "codeception/module-phpbrowser": "^1.0",
+                "codeception/module-rest": "^1.0",
+                "codeception/module-webdriver": "^1.0",
+                "codeception/util-universalframework": "^1.0",
+                "lucatume/wp-browser": "^3.0.14",
+                "phpunit/phpunit": "~6.0",
+                "symfony/event-dispatcher-contracts": "^2.5.1",
+                "symfony/string": "^5.4",
+                "szepeviktor/phpstan-wordpress": "^1.1"
+            },
+            "time": "2025-11-10T10:55:50+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "StellarWP\\DB\\": "src/DB/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "StellarWP",
+                    "email": "dev@stellarwp.com"
+                },
+                {
+                    "name": "Matthew Batchelder",
+                    "email": "matt.batchelder@stellarwp.com"
+                }
+            ],
+            "description": "A WPDB wrapper and query builder library.",
+            "support": {
+                "issues": "https://github.com/stellarwp/db/issues",
+                "source": "https://github.com/stellarwp/db/tree/1.2.0"
+            },
+            "install-path": "../stellarwp/db"
         },
         {
             "name": "stellarwp/prophecy-container",
@@ -878,6 +988,122 @@
                 "source": "https://github.com/stellarwp/prophecy-storage/tree/3.0.0.74"
             },
             "install-path": "../stellarwp/prophecy-storage"
+        },
+        {
+            "name": "stellarwp/schema",
+            "version": "2.0.1",
+            "version_normalized": "2.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stellarwp/schema.git",
+                "reference": "b80c02c6ee6cebcf9c21b642a7b20db5480f0cd6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stellarwp/schema/zipball/b80c02c6ee6cebcf9c21b642a7b20db5480f0cd6",
+                "reference": "b80c02c6ee6cebcf9c21b642a7b20db5480f0cd6",
+                "shasum": ""
+            },
+            "require": {
+                "psr/container": "^1.0",
+                "stellarwp/container-contract": "^1.0"
+            },
+            "require-dev": {
+                "brianhenryie/strauss": "^0.11.0",
+                "codeception/module-asserts": "^1.0",
+                "codeception/module-cli": "^1.0",
+                "codeception/module-db": "^1.0",
+                "codeception/module-filesystem": "^1.0",
+                "codeception/module-phpbrowser": "^1.0",
+                "codeception/module-rest": "^1.0",
+                "codeception/module-webdriver": "^1.0",
+                "codeception/util-universalframework": "^1.0",
+                "lucatume/di52": "^4.0",
+                "lucatume/wp-browser": "^3.0 < 3.5",
+                "php-stubs/wp-cli-stubs": "^2.11",
+                "phpunit/phpunit": "~6.0",
+                "stellarwp/db": "^1.1",
+                "symfony/event-dispatcher-contracts": "^2.5.1",
+                "symfony/string": "^5.4",
+                "szepeviktor/phpstan-wordpress": "^1.1"
+            },
+            "time": "2025-07-18T14:24:06+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "StellarWP\\Schema\\": "src/Schema/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "StellarWP",
+                    "email": "dev@stellarwp.com"
+                }
+            ],
+            "description": "A library for simplifying the creation and updates of custom tables within WordPress.",
+            "support": {
+                "issues": "https://github.com/stellarwp/schema/issues",
+                "source": "https://github.com/stellarwp/schema/tree/2.0.1"
+            },
+            "install-path": "../stellarwp/schema"
+        },
+        {
+            "name": "stellarwp/superglobals",
+            "version": "1.3.0",
+            "version_normalized": "1.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stellarwp/superglobals.git",
+                "reference": "a43ffa491c171f46d81a26d55e096bc8eaddfb3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stellarwp/superglobals/zipball/a43ffa491c171f46d81a26d55e096bc8eaddfb3e",
+                "reference": "a43ffa491c171f46d81a26d55e096bc8eaddfb3e",
+                "shasum": ""
+            },
+            "require": {
+                "stellarwp/arrays": "^1.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "<10.0",
+                "symfony/event-dispatcher-contracts": "^2.5.1",
+                "symfony/string": "^5.4",
+                "szepeviktor/phpstan-wordpress": "^1.1"
+            },
+            "time": "2024-06-26T14:12:19+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "StellarWP\\SuperGlobals\\": "src/SuperGlobals/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "StellarWP",
+                    "email": "dev@stellarwp.com"
+                },
+                {
+                    "name": "Matthew Batchelder",
+                    "email": "matt.batchelder@stellarwp.com"
+                }
+            ],
+            "description": "A library that handles access to superglobals.",
+            "support": {
+                "issues": "https://github.com/stellarwp/superglobals/issues",
+                "source": "https://github.com/stellarwp/superglobals/tree/1.3.0"
+            },
+            "install-path": "../stellarwp/superglobals"
         },
         {
             "name": "stellarwp/telemetry",
