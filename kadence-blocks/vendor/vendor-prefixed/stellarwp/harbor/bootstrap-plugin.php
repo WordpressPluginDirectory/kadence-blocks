@@ -1,0 +1,24 @@
+<?php
+/**
+ * Plugin Name: Harbor Test Bootstrap
+ * Description: Bootstraps LiquidWeb Harbor during plugins_loaded, before wp_loaded fires.
+ * Version: 1.0.0
+ * Author: Liquid Web
+ */
+
+use KadenceWP\KadenceBlocks\StellarWP\ContainerContract\ContainerInterface;
+use KadenceWP\KadenceBlocks\LiquidWeb\Harbor\Config;
+use KadenceWP\KadenceBlocks\LiquidWeb\Harbor\Tests\Container;
+use KadenceWP\KadenceBlocks\LiquidWeb\Harbor\Harbor;
+
+add_action(
+	'plugins_loaded',
+	static function () {
+		$container = new Container();
+		$container->singleton( ContainerInterface::class, $container );
+		Config::set_plugin_basename( plugin_basename( __FILE__ ) );
+		Config::set_container( $container );
+		Harbor::init();
+	},
+	0
+);
