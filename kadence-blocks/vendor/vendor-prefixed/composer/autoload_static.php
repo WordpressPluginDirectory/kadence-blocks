@@ -4,7 +4,7 @@
 
 namespace KadenceWP\KadenceBlocks\Composer\Autoload;
 
-class ComposerStaticInitcbd13bc82e80a56620bf95f8b723291f
+class ComposerStaticInite19178932566f9dcb91adf92d937ab3d
 {
     public static $files = array (
         'dfdcea4d84cc56c3d81598b2472a5a5d' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -435,7 +435,6 @@ class ComposerStaticInitcbd13bc82e80a56620bf95f8b723291f
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\API\\Functions\\Global_Function_Registry' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/API/Functions/Global_Function_Registry.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\API\\Functions\\Provider' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/API/Functions/Provider.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\API\\REST\\V1\\Catalog_Controller' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/API/REST/V1/Catalog_Controller.php',
-        'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\API\\REST\\V1\\Consent_Controller' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/API/REST/V1/Consent_Controller.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\API\\REST\\V1\\Feature_Controller' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/API/REST/V1/Feature_Controller.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\API\\REST\\V1\\Harbor_Hosts_Controller' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/API/REST/V1/Harbor_Hosts_Controller.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\API\\REST\\V1\\Legacy_License_Controller' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/API/REST/V1/Legacy_License_Controller.php',
@@ -443,7 +442,6 @@ class ComposerStaticInitcbd13bc82e80a56620bf95f8b723291f
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\API\\REST\\V1\\License_Response' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/API/REST/V1/License_Response.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\API\\REST\\V1\\Provider' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/API/REST/V1/Provider.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Admin\\Feature_Manager_Page' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Admin/Feature_Manager_Page.php',
-        'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Admin\\Opt_In_Page' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Admin/Opt_In_Page.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Admin\\Provider' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Admin/Provider.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\CLI\\Commands\\Catalog' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/CLI/Commands/Catalog.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\CLI\\Commands\\Feature' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/CLI/Commands/Feature.php',
@@ -452,11 +450,7 @@ class ComposerStaticInitcbd13bc82e80a56620bf95f8b723291f
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\CLI\\Provider' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/CLI/Provider.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Components\\Controller' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Components/Controller.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Config' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Config.php',
-        'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Consent\\Consent_Repository' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Consent/Consent_Repository.php',
-        'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Consent\\Provider' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Consent/Provider.php',
-        'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Contracts\\Abstract_Admin_Page' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Contracts/Abstract_Admin_Page.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Contracts\\Abstract_Provider' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Contracts/Abstract_Provider.php',
-        'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Contracts\\Admin_Page_Interface' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Contracts/Admin_Page_Interface.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Contracts\\Provider_Interface' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Contracts/Provider_Interface.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Cron\\Actions\\Handle_Unschedule_Cron_Data_Refresh' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Cron/Actions/Handle_Unschedule_Cron_Data_Refresh.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Cron\\Jobs\\Refresh_Catalog_Job' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Cron/Jobs/Refresh_Catalog_Job.php',
@@ -487,7 +481,6 @@ class ComposerStaticInitcbd13bc82e80a56620bf95f8b723291f
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Features\\Update\\Resolve_Update_Data' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Features/Update/Resolve_Update_Data.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Features\\Update\\Theme_Handler' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Features/Update/Theme_Handler.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Harbor' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Harbor.php',
-        'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Http\\Null_Client' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Http/Null_Client.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Http\\Provider' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Http/Provider.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Legacy\\Legacy_License' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Legacy/Legacy_License.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Legacy\\License_Repository' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Legacy/License_Repository.php',
@@ -507,7 +500,6 @@ class ComposerStaticInitcbd13bc82e80a56620bf95f8b723291f
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Catalog_Repository' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Catalog_Repository.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Clients\\Fixture_Client' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Clients/Fixture_Client.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Clients\\Http_Client' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Clients/Http_Client.php',
-        'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Clients\\Null_Client' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Clients/Null_Client.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Clients\\Portal_Client' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Clients/Portal_Client.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Contracts\\Download_Url_Builder' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Contracts/Download_Url_Builder.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Error_Code' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Error_Code.php',
@@ -517,6 +509,7 @@ class ComposerStaticInitcbd13bc82e80a56620bf95f8b723291f
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Results\\Catalog_Tier' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Results/Catalog_Tier.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Results\\Product_Catalog' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Results/Product_Catalog.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Results\\Tier_Collection' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Results/Tier_Collection.php',
+        'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Premium_Plugin_Registry' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Premium_Plugin_Registry.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Site\\Data' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Site/Data.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Traits\\With_Debugging' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Traits/With_Debugging.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Traits\\With_Error_Throttle' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Traits/With_Error_Throttle.php',
@@ -1309,9 +1302,9 @@ class ComposerStaticInitcbd13bc82e80a56620bf95f8b723291f
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitcbd13bc82e80a56620bf95f8b723291f::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitcbd13bc82e80a56620bf95f8b723291f::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitcbd13bc82e80a56620bf95f8b723291f::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInite19178932566f9dcb91adf92d937ab3d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInite19178932566f9dcb91adf92d937ab3d::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInite19178932566f9dcb91adf92d937ab3d::$classMap;
 
         }, null, ClassLoader::class);
     }

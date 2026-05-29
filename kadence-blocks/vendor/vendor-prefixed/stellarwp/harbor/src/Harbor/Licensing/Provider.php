@@ -9,7 +9,7 @@ use KadenceWP\KadenceBlocks\LiquidWeb\Harbor\Licensing\Registry\Product_Registry
 use KadenceWP\KadenceBlocks\LiquidWeb\Harbor\Licensing\Repositories\License_Repository;
 use KadenceWP\KadenceBlocks\LiquidWeb\LicensingApiClient\Config as LicensingConfig;
 use KadenceWP\KadenceBlocks\LiquidWeb\LicensingApiClient\Contracts\LicensingClientInterface;
-use KadenceWP\KadenceBlocks\Psr\Http\Client\ClientInterface;
+use KadenceWP\KadenceBlocks\LiquidWeb\LicensingApiClientWordPress\Http\WordPressHttpClient;
 use KadenceWP\KadenceBlocks\LiquidWeb\LicensingApiClientWordPress\WordPressApiFactory;
 use KadenceWP\KadenceBlocks\Nyholm\Psr7\Factory\Psr17Factory;
 
@@ -29,7 +29,7 @@ final class Provider extends Abstract_Provider {
 			function () {
 				$psr17   = $this->container->get( Psr17Factory::class );
 				$factory = new WordPressApiFactory(
-					$this->container->get( ClientInterface::class ),
+					$this->container->get( WordPressHttpClient::class ),
 					$psr17,
 					$psr17
 				);

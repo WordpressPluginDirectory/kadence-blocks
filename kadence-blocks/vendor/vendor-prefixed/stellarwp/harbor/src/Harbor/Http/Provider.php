@@ -2,9 +2,7 @@
 
 namespace KadenceWP\KadenceBlocks\LiquidWeb\Harbor\Http;
 
-use KadenceWP\KadenceBlocks\LiquidWeb\Harbor\Consent\Consent_Repository;
 use KadenceWP\KadenceBlocks\LiquidWeb\LicensingApiClientWordPress\Http\WordPressHttpClient;
-use KadenceWP\KadenceBlocks\LiquidWeb\Harbor\Http\Null_Client;
 use KadenceWP\KadenceBlocks\Nyholm\Psr7\Factory\Psr17Factory;
 use KadenceWP\KadenceBlocks\Psr\Http\Client\ClientInterface;
 use KadenceWP\KadenceBlocks\Psr\Http\Message\RequestFactoryInterface;
@@ -22,16 +20,8 @@ final class Provider extends Abstract_Provider {
 	 * @inheritDoc
 	 */
 	public function register(): void {
-		$this->container->singleton(
-			ClientInterface::class,
-			function (): ClientInterface {
-				if ( ! $this->container->get( Consent_Repository::class )->has_consent() ) {
-					return new Null_Client();
-				}
-
-				return new WordPressHttpClient();
-			}
-		);
+		$this->container->singleton( WordPressHttpClient::class );
+		$this->container->singleton( ClientInterface::class, WordPressHttpClient::class );
 		$this->container->singleton( Psr17Factory::class );
 		$this->container->singleton( RequestFactoryInterface::class, Psr17Factory::class );
 		$this->container->singleton( StreamFactoryInterface::class, Psr17Factory::class );

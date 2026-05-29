@@ -3266,17 +3266,6 @@ namespace KadenceWP\KadenceBlocks {
     array (
     ),
   ),
-  'LiquidWeb\\Harbor\\API\\REST\\V1\\Consent_Controller' => 
-  array (
-    'type' => 'class',
-    'classname' => 'Consent_Controller',
-    'isabstract' => false,
-    'namespace' => 'LiquidWeb\\Harbor\\API\\REST\\V1',
-    'extends' => 'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\API\\REST\\V1\\Consent_Controller',
-    'implements' => 
-    array (
-    ),
-  ),
   'LiquidWeb\\Harbor\\API\\REST\\V1\\Feature_Controller' => 
   array (
     'type' => 'class',
@@ -3350,17 +3339,6 @@ namespace KadenceWP\KadenceBlocks {
     'isabstract' => false,
     'namespace' => 'LiquidWeb\\Harbor\\Admin',
     'extends' => 'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Admin\\Feature_Manager_Page',
-    'implements' => 
-    array (
-    ),
-  ),
-  'LiquidWeb\\Harbor\\Admin\\Opt_In_Page' => 
-  array (
-    'type' => 'class',
-    'classname' => 'Opt_In_Page',
-    'isabstract' => false,
-    'namespace' => 'LiquidWeb\\Harbor\\Admin',
-    'extends' => 'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Admin\\Opt_In_Page',
     'implements' => 
     array (
     ),
@@ -3451,40 +3429,6 @@ namespace KadenceWP\KadenceBlocks {
     'extends' => 'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Config',
     'implements' => 
     array (
-    ),
-  ),
-  'LiquidWeb\\Harbor\\Consent\\Consent_Repository' => 
-  array (
-    'type' => 'class',
-    'classname' => 'Consent_Repository',
-    'isabstract' => false,
-    'namespace' => 'LiquidWeb\\Harbor\\Consent',
-    'extends' => 'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Consent\\Consent_Repository',
-    'implements' => 
-    array (
-    ),
-  ),
-  'LiquidWeb\\Harbor\\Consent\\Provider' => 
-  array (
-    'type' => 'class',
-    'classname' => 'Provider',
-    'isabstract' => false,
-    'namespace' => 'LiquidWeb\\Harbor\\Consent',
-    'extends' => 'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Consent\\Provider',
-    'implements' => 
-    array (
-    ),
-  ),
-  'LiquidWeb\\Harbor\\Contracts\\Abstract_Admin_Page' => 
-  array (
-    'type' => 'class',
-    'classname' => 'Abstract_Admin_Page',
-    'isabstract' => true,
-    'namespace' => 'LiquidWeb\\Harbor\\Contracts',
-    'extends' => 'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Contracts\\Abstract_Admin_Page',
-    'implements' => 
-    array (
-      0 => 'LiquidWeb\\Harbor\\Contracts\\Admin_Page_Interface',
     ),
   ),
   'LiquidWeb\\Harbor\\Contracts\\Abstract_Provider' => 
@@ -3799,18 +3743,6 @@ namespace KadenceWP\KadenceBlocks {
     array (
     ),
   ),
-  'LiquidWeb\\Harbor\\Http\\Null_Client' => 
-  array (
-    'type' => 'class',
-    'classname' => 'Null_Client',
-    'isabstract' => false,
-    'namespace' => 'LiquidWeb\\Harbor\\Http',
-    'extends' => 'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Http\\Null_Client',
-    'implements' => 
-    array (
-      0 => 'Psr\\Http\\Client\\ClientInterface',
-    ),
-  ),
   'LiquidWeb\\Harbor\\Http\\Provider' => 
   array (
     'type' => 'class',
@@ -4022,18 +3954,6 @@ namespace KadenceWP\KadenceBlocks {
       0 => 'LiquidWeb\\Harbor\\Portal\\Clients\\Portal_Client',
     ),
   ),
-  'LiquidWeb\\Harbor\\Portal\\Clients\\Null_Client' => 
-  array (
-    'type' => 'class',
-    'classname' => 'Null_Client',
-    'isabstract' => false,
-    'namespace' => 'LiquidWeb\\Harbor\\Portal\\Clients',
-    'extends' => 'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Clients\\Null_Client',
-    'implements' => 
-    array (
-      0 => 'LiquidWeb\\Harbor\\Portal\\Clients\\Portal_Client',
-    ),
-  ),
   'LiquidWeb\\Harbor\\Portal\\Error_Code' => 
   array (
     'type' => 'class',
@@ -4108,6 +4028,17 @@ namespace KadenceWP\KadenceBlocks {
     'isabstract' => false,
     'namespace' => 'LiquidWeb\\Harbor\\Portal\\Results',
     'extends' => 'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Results\\Tier_Collection',
+    'implements' => 
+    array (
+    ),
+  ),
+  'LiquidWeb\\Harbor\\Premium_Plugin_Registry' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Premium_Plugin_Registry',
+    'isabstract' => false,
+    'namespace' => 'LiquidWeb\\Harbor',
+    'extends' => 'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Premium_Plugin_Registry',
     'implements' => 
     array (
     ),
@@ -10537,16 +10468,6 @@ namespace KadenceWP\KadenceBlocks {
     'extends' => 
     array (
       0 => 'KadenceWP\\KadenceBlocks\\StellarWP\\ContainerContract\\ContainerInterface',
-    ),
-  ),
-  'LiquidWeb\\Harbor\\Contracts\\Admin_Page_Interface' => 
-  array (
-    'type' => 'interface',
-    'interfacename' => 'Admin_Page_Interface',
-    'namespace' => 'LiquidWeb\\Harbor\\Contracts',
-    'extends' => 
-    array (
-      0 => 'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Contracts\\Admin_Page_Interface',
     ),
   ),
   'LiquidWeb\\Harbor\\Contracts\\Provider_Interface' => 

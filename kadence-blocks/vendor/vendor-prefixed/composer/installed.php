@@ -2,9 +2,9 @@
   'root' => 
   array (
     'name' => 'kadencewp/kadence-blocks',
-    'pretty_version' => '3.7.1',
-    'version' => '3.7.1.0',
-    'reference' => 'beac502c83dbdc8d5759e035fa9deb72bf8fa8e4',
+    'pretty_version' => '3.7.3',
+    'version' => '3.7.3.0',
+    'reference' => '2f037efa8107d788089785a9f53a702ae347fff9',
     'type' => 'wordpress-plugin',
     'install_path' => __DIR__ . '/../',
     'aliases' => 
@@ -208,9 +208,9 @@
     ),
     'stellarwp/harbor' => 
     array (
-      'pretty_version' => 'v1.1.0',
-      'version' => '1.1.0.0',
-      'reference' => '97c3a17758b03f90980c34c661a7dd119c6c307f',
+      'pretty_version' => 'v1.2.0',
+      'version' => '1.2.0.0',
+      'reference' => 'f22783d0d79597d5b1acf6cce73e6f3ddb701334',
       'type' => 'library',
       'install_path' => __DIR__ . '/../stellarwp/harbor',
       'aliases' => 

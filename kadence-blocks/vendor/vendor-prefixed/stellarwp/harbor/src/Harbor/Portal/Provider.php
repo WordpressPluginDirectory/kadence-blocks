@@ -2,14 +2,12 @@
 
 namespace KadenceWP\KadenceBlocks\LiquidWeb\Harbor\Portal;
 
-use KadenceWP\KadenceBlocks\LiquidWeb\Harbor\Consent\Consent_Repository;
 use KadenceWP\KadenceBlocks\LiquidWeb\Harbor\Portal\Clients\Portal_Client;
 use KadenceWP\KadenceBlocks\LiquidWeb\Harbor\Portal\Clients\Http_Client;
-use KadenceWP\KadenceBlocks\LiquidWeb\Harbor\Portal\Clients\Null_Client;
 use KadenceWP\KadenceBlocks\LiquidWeb\Harbor\Config;
 use KadenceWP\KadenceBlocks\LiquidWeb\Harbor\Contracts\Abstract_Provider;
 use KadenceWP\KadenceBlocks\LiquidWeb\Harbor\Portal\Contracts\Download_Url_Builder;
-use KadenceWP\KadenceBlocks\Psr\Http\Client\ClientInterface;
+use KadenceWP\KadenceBlocks\LiquidWeb\LicensingApiClientWordPress\Http\WordPressHttpClient;
 use KadenceWP\KadenceBlocks\Nyholm\Psr7\Factory\Psr17Factory;
 
 /**
@@ -25,13 +23,9 @@ final class Provider extends Abstract_Provider {
 	public function register(): void {
 		$this->container->singleton(
 			Portal_Client::class,
-			function (): Portal_Client {
-				if ( ! $this->container->get( Consent_Repository::class )->has_consent() ) {
-					return new Null_Client();
-				}
-
+			function () {
 				return new Http_Client(
-					$this->container->get( ClientInterface::class ),
+					$this->container->get( WordPressHttpClient::class ),
 					$this->container->get( Psr17Factory::class ),
 					Config::get_portal_base_url()
 				);
