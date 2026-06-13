@@ -4,7 +4,7 @@
 
 namespace KadenceWP\KadenceBlocks\Composer\Autoload;
 
-class ComposerStaticInite19178932566f9dcb91adf92d937ab3d
+class ComposerStaticInita66bfc0f142779824e85c90b94c6ae41
 {
     public static $files = array (
         'dfdcea4d84cc56c3d81598b2472a5a5d' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -503,6 +503,8 @@ class ComposerStaticInite19178932566f9dcb91adf92d937ab3d
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Clients\\Portal_Client' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Clients/Portal_Client.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Contracts\\Download_Url_Builder' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Contracts/Download_Url_Builder.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Error_Code' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Error_Code.php',
+        'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Herald_Legacy_Url_Builder' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Herald_Legacy_Url_Builder.php',
+        'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Herald_Routing_Url_Builder' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Herald_Routing_Url_Builder.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Herald_Url_Builder' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Herald_Url_Builder.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Provider' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Provider.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Results\\Catalog_Feature' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Results/Catalog_Feature.php',
@@ -1302,9 +1304,9 @@ class ComposerStaticInite19178932566f9dcb91adf92d937ab3d
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInite19178932566f9dcb91adf92d937ab3d::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInite19178932566f9dcb91adf92d937ab3d::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInite19178932566f9dcb91adf92d937ab3d::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInita66bfc0f142779824e85c90b94c6ae41::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInita66bfc0f142779824e85c90b94c6ae41::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInita66bfc0f142779824e85c90b94c6ae41::$classMap;
 
         }, null, ClassLoader::class);
     }

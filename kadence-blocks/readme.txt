@@ -4,7 +4,7 @@ Tags: gutenberg, blocks, page builder, editor, gutenberg blocks
 Donate link: https://www.kadencewp.com/about-us/
 Requires at least: 6.6
 Tested up to: 7.0
-Stable tag: 3.7.3
+Stable tag: 3.7.6
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -168,6 +168,20 @@ Please report security bugs found in the source code of the Kadence Blocks plugi
 Please report security bugs found in the Kadence Blocks plugin's source code through the Patchstack Vulnerability Disclosure Program https://patchstack.com/database/vdp/kadence-blocks. The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
 
 == Changelog ==
+
+= 3.7.6 =
+Release Date: 11th June 2026
+* Tweak: Improved the Kadence add-ons update flow for legacy licenses.
+* Tweak: Kadence AI requests are now routed through a server-side proxy.
+
+= 3.7.5 =
+Release Date: 1st June 2026
+* Tweak: Pattern and Starter Template libraries now resolve an authorized license key (including unified Liquid Web licenses) when communicating with remote servers, so imports work for sites licensed through Liquid Web.
+* Tweak: Update Harbor to 1.4 and centralize premium plugin detection so the Liquid Web Products page recognizes all active premium Kadence plugins.
+
+= 3.7.4 =
+Release Date: 29th May 2026
+* Fix: Section/Row Layout Block - Flex Settings Direction, Alignment, and Vertical Alignment controls rendering as a text-alignment toolbar instead of their proper controls (regression in 3.7.3).
 
 = 3.7.3 =
 Release Date: 27th May 2026
@@ -371,7 +385,7 @@ Release Date: 14th August 2025
 * Fix: bad class name in heading block
 * Fix: Row Layout Block Tablet/Mobile Spacing Issue
 * Fix: Nested Navigation Block does not work properly in Dashboard > Kadence > Navigations
-* Fix: Countdown Block repeater date is wrong in some sitiuations
+* Fix: Countdown Block repeater date is wrong in some situations
 * Fix: Icon color issue in search block
 * Fix: Freeze submenu preview setting for hover to open
 
@@ -460,7 +474,7 @@ Release Date: May 1st 2025
 * Enhancement: Improved design library navigation, filtering, and sorting.
 * Fix: Comma separated CC field not sending to multiple users.
 * Fix: Transparent Logo Reverts to Default Logo After Scrolling Back Up with Sticky Header Enabled.
-* Fix: Text alignemnt on frontend in table block.
+* Fix: Text alignment on frontend in table block.
 
 = 3.5.5 =
 Release Date: April 28th 2025
