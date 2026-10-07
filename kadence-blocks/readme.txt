@@ -3,8 +3,8 @@ Contributors: britner, oakesjosh, woodardmc, ghernkadence
 Tags: gutenberg, blocks, page builder, editor, gutenberg blocks
 Donate link: https://www.kadencewp.com/about-us/
 Requires at least: 6.6
-Tested up to: 7.0
-Stable tag: 3.7.6
+Tested up to: 7.1
+Stable tag: 3.7.12.1
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -168,6 +168,59 @@ Please report security bugs found in the source code of the Kadence Blocks plugi
 Please report security bugs found in the Kadence Blocks plugin's source code through the Patchstack Vulnerability Disclosure Program https://patchstack.com/database/vdp/kadence-blocks. The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
 
 == Changelog ==
+
+= 3.7.12.1 =
+Release Date: 6th October 2026
+* Security: Improved output escaping for block attributes.
+* Security: Improved output handling in multiple blocks.
+
+= 3.7.12 =
+Release Date: 30th September 2026
+* Update: Updated Harbor to 1.6.1 for catalog changelog support in update details.
+* Security: Improved file upload handling in Advanced Form.
+
+= 3.7.11.1 =
+Release Date: 21st September 2026
+* Security: Improved output escaping for block attributes.
+
+= 3.7.11 =
+Release Date: 16th September 2026
+* Security: Strengthened input sanitization and output escaping in Kadence Blocks forms.
+
+= 3.7.10 =
+Release Date: 2nd September 2026
+* Fix: Resolved an issue where submenus opened on hover in the Navigation block could not be dismissed with the Escape key.
+
+= 3.7.9.1 =
+Release Date: 12th August 2026
+* Security: Enhanced security on image processing REST API module.
+
+= 3.7.9 =
+Release Date: 5th August 2026
+* Tweak: Improved the unified licensing page experience.
+* Fix: Restored support for custom design library locations.
+* Fix: Resolved a JavaScript error that prevented Auto Spacing Under from working when the Advanced Header used a Transparent Header inside a block theme template.
+* Fixed: Advanced Gallery Block - Resolved an issue where long captions stretched slides to the full container width in the Fluid Carousel gallery type when captions were set to display below the image.
+
+= 3.7.8.2 =
+Release Date: 29th July 2026
+* Security: Improved markup handling in block output.
+
+= 3.7.8.1 =
+Release Date: 27th July 2026
+* Security: Hardened library requests to only use known locations.
+* Security: Improved output escaping for block attributes.
+
+= 3.7.8 =
+Release Date: 29th June 2026
+* Security: Hardened capability checks in the pattern and template import process.
+* Security: Enhanced authorization checks on the performance optimizer data endpoints.
+
+= 3.7.7 =
+Release Date: 24rd June 2026
+* Fix: Resolved an issue with the Advanced Text Block after updating from earlier Kadence Blocks versions
+* Fix: Advanced Text Block dynamic links now resolve to the correct post when used inside a query loop
+* Fix: Row Layout Block breakout left/right margins no longer incorrectly apply to columns inside nested row layouts in the editor
 
 = 3.7.6 =
 Release Date: 11th June 2026

@@ -4,7 +4,7 @@
 
 namespace KadenceWP\KadenceBlocks\Composer\Autoload;
 
-class ComposerStaticInita66bfc0f142779824e85c90b94c6ae41
+class ComposerStaticInit39d33145a8e7c9656622ae9d98cfa334
 {
     public static $files = array (
         'dfdcea4d84cc56c3d81598b2472a5a5d' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -494,6 +494,7 @@ class ComposerStaticInita66bfc0f142779824e85c90b94c6ae41
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Licensing\\Registry\\Product_Registry' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Licensing/Registry/Product_Registry.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Licensing\\Repositories\\License_Repository' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Licensing/Repositories/License_Repository.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Licensing\\Results\\Product_Entry' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Licensing/Results/Product_Entry.php',
+        'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Licensing\\Validation_State' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Licensing/Validation_State.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Notice\\Notice' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Notice/Notice.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Notice\\Notice_Controller' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Notice/Notice_Controller.php',
         'KadenceWP\\KadenceBlocks\\LiquidWeb\\Harbor\\Portal\\Catalog_Collection' => __DIR__ . '/..' . '/stellarwp/harbor/src/Harbor/Portal/Catalog_Collection.php',
@@ -1304,9 +1305,9 @@ class ComposerStaticInita66bfc0f142779824e85c90b94c6ae41
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInita66bfc0f142779824e85c90b94c6ae41::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInita66bfc0f142779824e85c90b94c6ae41::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInita66bfc0f142779824e85c90b94c6ae41::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit39d33145a8e7c9656622ae9d98cfa334::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit39d33145a8e7c9656622ae9d98cfa334::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit39d33145a8e7c9656622ae9d98cfa334::$classMap;
 
         }, null, ClassLoader::class);
     }
